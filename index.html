@@ -31,6 +31,31 @@
     border: solid 1px #f45326; 
 }
 
+.card{
+    width: 350px;
+    height: 50px;
+    border: solid 1px #f45326; 
+}
+.card p {
+    height: 50px;
+    overflow: hidden;
+}
+
+.card p {
+    height: 50px;
+    overflow: hidden;
+}
+
+.card p {
+    height: 50px;
+    overflow: hidden;
+}
+
+.card p {
+    height: 50px;
+    overflow: hidden;
+}
+
     </style>
 </head>
 <body>
@@ -48,10 +73,41 @@
 
    <h4><b style="color:blue;">Fundamentos de hardware</b></h4>
        <ol>
-       <li>Definição</li>
-       <li>Evolução</li>
-       <li>Arquitetura (componentes e periféricos)</li>
-       <li>Funcionamento</li>
+        <!--esse funciona-->
+       <li>Definição:</li>
+       <div class="card" id="texto-escondido">Os fundamentos de hardware são os componentes físicos e equipamentos utilizados
+        para construir um sistema computacional ou dispositivo eletrônico. Isso inclui a placa-mãe, processador, memória RAM,
+         disco rígido, placa de vídeo, fonte de alimentação e periféricos. Esses componentes trabalham juntos para permitir que
+          o sistema execute suas funções e realize tarefas. Em resumo, o hardware é a parte física do sistema, enquanto o
+           software é a parte lógica que é executada pelo hardware.</div>
+         <button class="mostrar-mais">Mostrar-mais</button>
+         </ol>
+        </div>
+
+       <ol>
+        <!--botao funcionando-->
+        <li>Evolução:</li>
+       <div class="card" id="Textonaovi">A evolução do hardware pode ser resumida como uma constante busca por aumentar o poder
+         de processamento,
+        reduzir o tamanho dos componentes e aumentar a eficiência energética, resultando em computadores cada vez mais rápidos,
+         compactos e eficientes.</div></ol>       
+           <ol><button class="mostrarmais">Mostrar-mais</button>
+        </ol>
+        <!--botao funcionando-->
+       <ol>   
+       <li><b>Arquitetura (componentes e periféricos)</li></b>
+      <p> <div class= "card" id="botao3">A arquitetura de um sistema computacional inclui componentes como CPU, memória e dispositivos de entrada/saída.
+        A CPU é responsável por executar as instruções, a memória armazena dados temporariamente e os dispositivos de entrada/saída 
+        permitem a entrada/saída de dados.</div></p>
+
+        <button class="Mostrarmais">Mostrar-mais</button></p>
+        <b><li>Funcionamento:</li></b><br>
+        <!--botao em construção.-->
+       <div class="card" id="botao4"> O hardware é o conjunto de componentes físicos de um computador que trabalham juntos para executar tarefas. O processador
+         é o cérebro do computador, a memória armazena informações temporariamente e o disco rígido armazena informações 
+         permanentemente.</div>
+         <button class="mostrarMais">mostrar-mais</button>
+    </ol>
    </ol>
 
    <h4 style="color:blue;">Fundamentos do Software</h4>
@@ -134,18 +190,71 @@
                </ol>
        </ol>
 <!-- cartões usando a teoria do flow-->
-       <div ckass="card">
-        <p>texto</p>
 
        </div>
+       <!--este é responsavel pelo botao definição e está funcionando-->
 <!--Este código foi emprestado pelo programador Isac-->
 <script>
-    /* 
-    A memória Ram é a memória principal
-    Quando criamos uma variável
-    armazenamos dados na variável
-    */
-   var msg ="Olá aluno, seja Bem-Vindo ao curso DF-InovaTech."
+    const btnMostrarMais = document.querySelector('.mostrar-mais');
+    const textoEscondido = document.querySelector('#texto-escondido');
+    
+    btnMostrarMais.addEventListener('click', () => {
+      if (textoEscondido.style.display === 'none') {
+        textoEscondido.style.display = 'block';
+        btnMostrarMais.textContent = 'esconder';
+      } else {
+        textoEscondido.style.display = 'none';
+        btnMostrarMais.textContent = 'mostrar mais';
+      }
+    });
+</script>
+<!--Este é responsável pelo botão Evolução e está funcionando.-->
+<script>
+    const btnmostrarmais = document.querySelector('.mostrarmais');
+    const Textonaovi = document.querySelector('#Textonaovi');
+    
+    btnmostrarmais.addEventListener('click', () => {
+      if (Textonaovi.style.display === 'none') {
+        Textonaovi.style.display = 'block';
+        btnmostrarmais.textContent = 'esconder';
+      } else {
+        Textonaovi.style.display = 'none';
+        btnmostrarmais.textContent = 'mostrar mais';
+      }
+    });
+    </script>
+    <!---Este é reponsável pelo botao3 (arquitetura e está funcionando.)-->
+    <script>
+        const btnMostrarmais = document.querySelector('.Mostrarmais');
+        const botao3 = document.querySelector('#botao3');
+
+        btnMostrarmais.addEventListener('click', () => {
+            if (botao3.style.display === 'none') {
+                botao3.style.display = 'block';
+                btnMostrarmais.textContent = 'esconder';
+            } else {
+                botao3.style.display = 'none';
+                btnMostrarmais.textContent = 'mostrar mais';
+            }
+        } )
+    </script>
+   <!--botao4 em construção na função script-->
+    <script>
+        const btnmostrarMais = document.querySelector('.mostrarMais');
+        const botao4 = document.querySelector('#botao4');
+
+        btnmostrarMais.addEventListener('click', () => {
+            if (botao4.style.display === 'none') {
+                botao4.style.display = 'block';
+                btnmostrarMais.textContent = 'esconder';
+            } else {
+                botao4.style.display = 'none';
+                btnmostrarMais.textContent = 'mostrar mais';
+            }
+        })
+    </script>
+    
+  <script> var msg ="Olá aluno, seja Bem-Vindo ao curso DF-InovaTech."
 const dataAtual = new Date()
 
 const dataFormatada = dataAtual.toLocaleDateString('pt-br');

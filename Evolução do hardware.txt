@@ -1,0 +1,7 @@
+Evolução do hardware:
+
+A evolução do hardware pode ser resumida como uma constante busca por aumentar o poder de processamento, reduzir o tamanho dos componentes e aumentar a eficiência energética, resultando em computadores cada vez mais rápidos, compactos e eficientes.
+
+Funcionamento:
+
+Hardware é a parte física do computador, incluindo componentes como processador, memória RAM e dispositivos de entrada/saída, que trabalham juntos para executar as operações do computador e realizar tarefas.
